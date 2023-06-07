@@ -1,0 +1,6 @@
+/target
+/Cargo.lock
+.vscode
+/*/__pycache__
+/*/__pycache__/*
+/*/*.cpython-*.so

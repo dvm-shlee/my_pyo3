@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "my_pyo3"
+requires-python = ">=3.7"
+dependencies = [
+    'nox >= 2023.4.22',
+    'numpy >= 1.24.3'
+]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+
+[tool.maturin]
+module-name = "my_pyo3.my_rs"
+features = ["pyo3/extension-module"]
